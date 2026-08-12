@@ -1,5 +1,12 @@
 import subprocess
-subprocess.run(["pip", "install", "-q", "bitsandbytes>=0.46.1"], check=True)
+
+subprocess.run([
+    "pip", "install", "-U",
+    "kagglehub",
+    "transformers",
+    "bitsandbytes>=0.46.1"
+], check=True)
+
 
 import time
 import numpy as np
